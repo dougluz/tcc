@@ -157,6 +157,7 @@ class Armazena {
           });
           this.tbody = document.getAnimations("tbody"); 
       }
+      
   }
 
 
