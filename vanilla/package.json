@@ -1,0 +1,25 @@
+{
+  "name": "vanillajs-benchmark",
+  "version": "1.0.0",
+  "description": "vanilla js benchmark",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack -w -d",
+    "build-prod": "webpack -p"
+  },
+  "keywords": [
+    "webpack",
+    "vanilla",
+    "js",
+    "benchmark"
+  ],
+  "author": "dougluz",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
