@@ -13,7 +13,7 @@ var pararMedicao = function() {
       ultimaMedicao = null;
       var parar = performance.now();
       var duracao = 0;
-      console.log(`${ultimo} demorou`(parar - tempoInicial));
+      console.log(ultimo + 'demorou' + (parar - tempoInicial));
     }, 0);
   }
 };
@@ -43,8 +43,9 @@ class Armazena {
     return data;
   }
   attData(mod = 10) {
+      var newData = [...this.data]
     for (let i = 0; i < this.data.length; i += 10) {
-        this.data[i].label += " atualizado";
+        newData[i].label += " atualizado";
     }
   }
   deleta(id) {
@@ -156,7 +157,7 @@ class Armazena {
                   e.preventDefault();
                   let id = getIdPai(e.target);
                   let idx = this.findIdx(id);
-                  this.seleciona(idx);
+                  this.selecionar(idx);
               }
           });
           this.tbody = document.getElementById("tbody"); 
